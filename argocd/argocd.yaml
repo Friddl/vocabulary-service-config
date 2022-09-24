@@ -1,0 +1,14 @@
+project: lenatrack
+source:
+  repoURL: 'https://github.com/Friddl/vocabulary-service.git'
+  path: dev
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: lenatrack
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
+  syncOptions:
+    - CreateNamespace=true
