@@ -3,4 +3,6 @@ kind: ConfigMap
 metadata:
   name: vocabulary-service
 data:
-  LENATRACK_CORS_ALLOWEDORIGINS: "http://192.168.178.58:3000,http://eezhyzlax9zbrppr.myfritz.net/"
+  LENATRACK_CORS_ALLOWEDORIGINS: |-
+    "http://192.168.178.58:3000",
+    "http://eezhyzlax9zbrppr.myfritz.net/"
