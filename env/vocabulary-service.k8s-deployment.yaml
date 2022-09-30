@@ -20,7 +20,7 @@ spec:
             - containerPort: 8080
           env:
             - name: LENATRACK_CORS_ALLOWEDORIGINS
-              value: http://192.168.178.58:3000,http://eezhyzlax9zbrppr.myfritz.net/
+              value: http://eezhyzlax9zbrppr.myfritz.net/
       restartPolicy: Always
 
   selector:
