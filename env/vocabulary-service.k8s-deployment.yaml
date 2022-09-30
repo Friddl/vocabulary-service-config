@@ -20,7 +20,10 @@ spec:
             - containerPort: 8080
           env:
             - name: LENATRACK_CORS_ALLOWEDORIGINS
-              value: http://eezhyzlax9zbrppr.myfritz.net,http://192.168.178.58:3000
+              valueFrom:
+                configMapKeyRef:
+                  name: vocabulary-service
+                  key: LENATRACK_CORS_ALLOWEDORIGINS
       restartPolicy: Always
 
   selector:
