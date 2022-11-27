@@ -1,6 +1,6 @@
 project: lenatrack
 source:
-  repoURL: 'https://github.com/Friddl/vocabulary-service.git'
+  repoURL: 'https://github.com/deschery/vocabulary-service.git'
   path: dev
   targetRevision: HEAD
 destination:
